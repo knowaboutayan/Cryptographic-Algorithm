@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptography</title>
+    <link rel="stylesheet" href="/css/crypto.css"> <!-- Link to an external stylesheet for styling -->
+</head>
+<script src="/js/loader.js"></script>
+<script async src="/js/oneTimePad.js"></script> <!-- Include the JavaScript file for the cipher logic -->
+
+<body>
+    <div id="loaderBox">
+        <div class="loader"></div>
+    </div>
+
+    <h1><b>Cryptography</b></h1> <!-- Main title of the page -->
+    <section>
+        <!-- Section for One Time Pad Cipher -->
+        <h1>ONE TIME PAD CIPHER</h1> <!-- Subtitle for the One Time Pad Cipher section -->
+        <div>
+            <!-- Input field for plain text -->
+            <h3>Plain Text:</h3>
+            <input type="text" onchange="cipher(plaintext.value, keytext.value)" value="" placeholder="Type text"
+                id="plain_text">
+        </div>
+        <div>
+            <!-- Input field for the random key (read-only and disabled) -->
+            <h3>Random Key:</h3>
+            <input type="text" onchange="cipher(plaintext.value, keytext.value)" value=""
+                placeholder="Randomely Generated key" id="key_text" readonly disabled>
+        </div>
+        <div>
+            <!-- Button to generate a random key -->
+            <button onclick="cipher(plaintext.value, keytext.value)">Random Key</button>
+        </div>
+        <div>
+            <!-- Display the resulting Cipher Text -->
+            <h3>Cipher Text:</h3>
+            <code id="cipher_text"></code>
+        </div>
+    </section>
+    <section>
+        <!-- Navigation links to other cipher-related pages -->
+        <h1>Try other ciphers:</h1>
+        <ul class="navigation-menu">
+    <li><a href="/index.html">Home</a></li>
+    <li><a href="./ceasar.html">Caesar Cipher</a></li>
+    <li><a href="./playfair.html">Playfair</a></li>
+    <li><a href="./multialphabe.html">Polyalphabetic Cipher</a></li>
+    <li><a href="./hill.html">Hill Cipher</a></li>
+    <li><a href="./vernam.html">Vernam Cipher</a></li>
+    <li><a href="./oneTimePad.html">One-Time Pad</a></li>
+</ul>
+
+    </section>
+</body>
+<footer>
+    <!-- Footer with copyright notice -->
+    <center>~ Developed By Creationology ~</center>
+</footer>
+
+</html>

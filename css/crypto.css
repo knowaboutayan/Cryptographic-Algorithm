@@ -1,0 +1,201 @@
+
+#loaderBox {
+  background-color: rgba(201, 189, 252, 0.9);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* You can add000000000000000000000 more styling to the loader content as needed, for example: */
+/* Loader Styles */
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  background-color: transparent;
+position: absolute; 
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Your existing styles */
+/* ... */
+
+body {
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease;
+}
+
+section {
+  margin: auto;
+  line-height: 1.5;
+  width: 80%;
+  min-width: 320px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+div {
+  margin: auto; /* Reduced margin here */
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  margin: auto;
+  font-size: 2.2em;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+section h1 {
+  background-color: #0056b3;
+  transition: background-color 0.3s ease;
+}
+
+h3 {
+  margin: 20px 0;
+  color: #333;
+  font-size: 1.4em;
+  font-weight: 400;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2em;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Arial', sans-serif;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border: 2px solid #007bff;
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
+}
+
+table {
+  display: grid;
+  align-items: center;
+  max-width: 100%;
+  min-width: max-content;
+}
+
+tr {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
+}
+
+table input {
+  width: 2em;
+  text-align: center;
+  border: 2px solid #aaa;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  font-size: 1.2em;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  padding: 6px;
+  text-align: center;
+  margin: 5px;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  padding: 15px 30px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+code {
+  font-size: 1.6em;
+  color: #2f00ff;
+  word-break: break-all;
+  font-family: 'Courier New', Courier, monospace;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect on code elements */
+code:hover {
+  color: #ff2f00;
+}
+
+.navigation-menu {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ccc;
+}
+
+.navigation-menu li {
+  margin: 0 15px;
+}
+
+.navigation-menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+.navigation-menu a:hover {
+  color: #007bff;
+}
