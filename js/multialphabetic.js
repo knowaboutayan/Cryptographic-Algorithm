@@ -42,7 +42,7 @@ let cipher = (plainText, algo, key) => {
                     
                 }
                 else {
-                    newKey.push(plainText[count%plainText.length])
+                    newKey.push(plainText[count%key.length])
                 }
                 count++
             }
