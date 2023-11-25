@@ -45,6 +45,7 @@ let makingGrid = (key) => {
             let input = document.createElement('input');
             row.appendChild(input);
             input.setAttribute('value', `${temp1DGrid[count]}`)
+input.style+="border:solid 2px blue";
             input.readOnly = 'true'
             count++;
         }
